@@ -1,0 +1,21 @@
+{
+  "name": "project",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently \"json-server -p 8080 -w db.json\" \"vite\"",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "axios": "^1.6.8",
+    "chart.js": "^4.4.2",
+    "concurrently": "^8.2.2",
+    "json-server": "^1.0.0-alpha.23",
+    "vite": "^5.1.4"
+  },
+  "dependencies": {
+    "moment": "^2.30.1"
+  }
+}

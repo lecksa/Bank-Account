@@ -1,0 +1,30 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Raleway;
+    outline: none;
+}
+
+.centre_2{
+    display: flex;
+    gap: 16px;
+    flex-direction: row;
+    overflow-x: scroll;
+    
+    .first_2{
+        width: 293px;
+        height: 148px;
+        border-radius: 5px;
+        background: linear-gradient(to bottom, #1B124E 20%, #0F0B38 100%);
+        padding: 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+
+        h1 {
+            color: white;
+            font-size: 20px;
+        }
+    }
+}

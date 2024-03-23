@@ -1,0 +1,41 @@
+{
+  "users": [
+    {
+      "id": "7a6e",
+      "email": "abdullaevadil2007@gmail.com",
+      "name": "dilrukh",
+      "surname": "abdullaeva",
+      "password": "1234"
+    }
+  ],
+  "wallets": [
+    {
+      "id": "0.5744210883241783",
+      "created_at": "23.03.2024",
+      "updated_at": "23.03.2024",
+      "name": "dilrukh",
+      "currency": "UZS",
+      "balance": "12000",
+      "user_id": "7a6e"
+    },
+    {
+      "id": "0.4961456352792626",
+      "created_at": "23.03.2024",
+      "updated_at": "23.03.2024",
+      "name": "dilrukh",
+      "currency": "BND",
+      "balance": "2322",
+      "user_id": "7a6e"
+    },
+    {
+      "id": "0.15155981562809306",
+      "created_at": "23.03.2024",
+      "updated_at": "23.03.2024",
+      "name": "dilrukh",
+      "currency": "BIF",
+      "balance": "40000",
+      "user_id": "7a6e"
+    }
+  ],
+  "transictions": []
+}
