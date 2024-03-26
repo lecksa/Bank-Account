@@ -100,8 +100,7 @@ a {
         gap: 10px;
         width: 100%;
 
-        input,
-        select {
+        input {
             width: 380px;
             height: 58px;
             border: none;
@@ -138,7 +137,7 @@ a {
             background-color: #0047FF;
         }
     }
-    
+
     #one {
         position: absolute;
         bottom: 120px;

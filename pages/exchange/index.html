@@ -1,13 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../../style.css">
     <title>Exchange</title>
 </head>
+
 <body>
-    
-    <script src="./script.js"></script>
+
+    <div class="wrap">
+
+        <div class="main">
+            <div class="line"></div>
+
+            <div class="top">
+                <h1>Exchange</h1>
+                <select name="name"></select>
+            </div>
+
+            <form name="convert">
+                <div class="change">
+                    <div class="one">
+                        <p>From</p>
+                        <div class="from">
+                            <div class="card_from">
+                                <div class="info" style="margin-top: 124px;">
+                                    <p class="balance_1"></p>
+                                    <p class="currency_1"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="two">
+                        <p>To</p>
+                        <div class="to">
+                            <div class="card_to">
+                                <select name="name"></select>
+                                <div class="info">
+                                    <p class="balance_2"></p>
+                                    <p class="currency_2"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="performance">
+                    <div class="from_curr">
+                        <h1 class="balance_3"></h1>
+                        <h1 class="currency_3"></h1>
+                    </div>
+                    <img src="../../public/img/Arrow_2.svg" alt="">
+                    <div class="to_curr">
+                        <h1 class="balance_4"></h1>
+                        <h1 class="currency_4"></h1>
+                    </div>
+                </div>
+
+                <div class="btn">
+                    <button>Exchange</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script type="module" src="./script.js"></script>
 </body>
+
 </html>

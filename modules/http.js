@@ -1,5 +1,4 @@
 import axios from "axios"
-import { toaster } from "./ui.js"
 
 const baseURL = import.meta.env.VITE_BASE_URL
 
@@ -9,7 +8,7 @@ export const getData = async (path) => {
 
         return res
     } catch(e) {
-        toaster(e.message)
+        console.log(e);
     }
 }
 
@@ -19,7 +18,7 @@ export const postData = async (path, body) => {
 
         return res
     } catch(e) {
-        toaster(e.message)
+        console.log(e);
     }
 }
 

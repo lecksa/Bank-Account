@@ -1,0 +1,116 @@
+.top select {
+    width: 150px;
+    height: 33px;
+    color: rgb(255, 255, 255);
+    background: #1B124E;
+    font-size: 24px;
+    border: none;
+    border-radius: 5px;
+}
+
+.change {
+    display: flex;
+    gap: 24px;
+
+    p {
+        color: #616A8B;
+        font-size: 16px;
+        padding-bottom: 8px;
+    }
+
+    .from,
+    .to {
+        width: 540px;
+        height: 250px;
+        background: linear-gradient(#1B124E 20%, #0F0B38 100%);
+        border-radius: 5px;
+
+        select {
+            width: 450px;
+            height: 33px;
+            color: rgb(255, 255, 255);
+            background: #1B124E;
+            font-size: 24px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .card_from,
+        .card_to {
+            display: flex;
+            flex-direction: column;
+            gap: 90px;
+            padding: 30px;
+
+
+            .info {
+                padding: 10px;
+                width: 480px;
+                height: 50px;
+                background-color: #32395E;
+                border-radius: 5px;
+                display: flex;
+                justify-content: space-between;
+
+                p{
+                    font-size: 24px;
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+.performance {
+    padding: 40px;
+    width: 1105px;
+    height: 115px;
+    background: linear-gradient(#1B124E 20%, #0F0B38 100%);
+    border-radius: 5px;
+    margin-top: 24px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+
+    .from_curr, .to_curr{
+        display: flex;
+        gap: 15px;
+    }
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    button {
+        width: 180px;
+        height: 42px;
+        border: none;
+        border-radius: 8px;
+        background: linear-gradient(to right, #3887FE, #3BA0FF, #5FB2FF);
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        font-size: 16px;
+        cursor: pointer;
+        transition: .3s ease;
+
+        button:hover {
+            scale: 1.03;
+            background-color: #0134b5;
+        }
+
+        button:active {
+            scale: 1;
+            background-color: #0047FF;
+        }
+
+        a {
+            color: white;
+        }
+    }
+}

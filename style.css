@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: Raleway;
+    font-family: Gilroy;
     outline: none;
     text-decoration: none;
 }
@@ -86,12 +86,11 @@
 
 .main {
     padding-left: 240px;
-    
+
     .header {
         display: flex;
-        gap: 700px;
-        padding: 32px;
-        padding-left: 0;
+        gap: 630px;
+        padding: 10px 32px;
 
         .search {
             input {
@@ -113,11 +112,19 @@
         .icons {
             display: flex;
             gap: 32px;
-            
+
             img {
                 cursor: pointer;
-                width: 33px;
-                height: 33px;
+            }
+
+            .img_1{
+                width: 43px;
+                height: 43px;
+            }
+
+            .img_2{
+                width: 66px;
+                height: 66px;
             }
         }
 
@@ -127,24 +134,25 @@
         width: 1100px;
         height: 1px;
         background-color: #2D317A;
-        margin-bottom: 30px;
+        margin-bottom: 10px;
     }
-
+    
+    h1 {
+        font-size: 24px;
+        color: white;
+    }
+    
     .top {
         width: 1100px;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding-bottom: 24px;
+        padding-bottom: 10px;
 
-        h1 {
-            font-size: 24px;
-            color: white;
-        }
 
         button {
-            width: 125px;
-            height: 32px;
+            width: 150px;
+            height: 30px;
             border: none;
             border-radius: 25px;
             background: linear-gradient(to right, #3887FE, #3BA0FF, #5FB2FF);
@@ -161,13 +169,13 @@
                 scale: 1.03;
                 background-color: #0134b5;
             }
-            
+
             button:active {
                 scale: 1;
                 background-color: #0047FF;
             }
 
-            a{
+            a {
                 color: white;
             }
         }
@@ -177,7 +185,8 @@
         display: flex;
         gap: 15px;
 
-        .first, .second {
+        .first,
+        .second {
             width: 226px;
             height: 312px;
             border-radius: 5px;
@@ -191,6 +200,11 @@
                 color: white;
                 font-size: 20px;
             }
+
+            p{
+                color: white;
+                font-size: 20px;
+            }
         }
 
 
@@ -200,32 +214,26 @@
             gap: 16px;
 
             .card {
-                width: 284px;
+                position: relative;
+                width: 300px;
                 height: 148px;
                 border-radius: 5px;
                 background: linear-gradient(to right, #604392 100%, #0F0B38 100%);
+                padding: 20px;
 
                 h1 {
-                    font-size: 24px;
+                    font-size: 28px;
                     font-weight: 500;
-                    line-height: 29px;
                     color: white;
-                    margin: 10px 20px;
-                  }
-              
-                  .curr {
-                    right: 20px;
-                    position: absolute;
-                    bottom: 10px;
+                    padding-bottom: 10px;
+                }
+
+                p {
+                    font-size: 20px;
+                    font-weight: 500;
                     color: white;
-                  }
-              
-                  .balance {
-                    margin: 0 20px;
-                    position: absolute;
-                    bottom: 10px;
-                    color: white;
-                  }
+                    padding-bottom: 5px;
+                }
             }
         }
     }

@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="./style.css">
-  <!-- <script defer src="./modules/guardian.js"></script> -->
+  <script defer src="./modules/guardian.js"></script>
   <title>Vite App</title>
 </head>
 
@@ -14,25 +14,19 @@
 
     <div class="main">
       <div class="line"></div>
-
-      <div class="top">
-        <div class="text">
-          <h1>Overview</h1>
-        </div>
-        <button>
-          <a href="./pages/add_wallet/index.html">Add wallet</a></button>
-      </div>
+      <h1 style="padding-bottom: 24px;">Overview</h1>
       <div class="centre">
         <div class="first">
           <h1>Balance</h1>
-          <canvas id="myDoughnutChart" style="border: none; width: 300px; height: 300px;"></canvas>
+          <canvas id="myChart" style="border: none; width: 300px; height: 300px;"></canvas>
         </div>
         <div class="second">
           <h1>Spending</h1>
+          <p class="total_spend">0</p>
+          <canvas id="chart_simp"></canvas>
         </div>
         <div class="third"></div>
       </div>
-
     </div>
   </div>
   <script type="module" src="/main.js"></script>

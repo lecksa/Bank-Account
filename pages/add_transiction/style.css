@@ -7,6 +7,11 @@ input,select {
     padding: 10px 15px;
 }
 
+.error_input {
+    border: 2px solid red !important;
+    outline-color: 2px solid red !important;
+}
+
 button {
     width: 380px;
     height: 56px;

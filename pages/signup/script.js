@@ -1,6 +1,5 @@
 import axios from 'axios'
 import { getData, postData } from '../../modules/http.js'
-import { toaster } from '../../modules/ui.js'
 const form = document.forms.signup
 
 form.onsubmit = (e) => {
@@ -18,7 +17,7 @@ form.onsubmit = (e) => {
         getData('/users?email=' + email)
             .then(res => {
                 if (res.data.length > 0) {
-                    toaster('Аккаунт уже существует')
+                    console.log(e);    
                     return
                 }
                 postData('/users', user)

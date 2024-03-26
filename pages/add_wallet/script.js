@@ -1,10 +1,10 @@
 import { getSymbols, postData } from "../../modules/http.js"
-const user = JSON.parse(localStorage.getItem('user'))
+const user_loc = JSON.parse(localStorage.getItem('user'))
 
 const form = document.forms.add_card
 const select = form.querySelector('select')
 
-getSymbols()
+await getSymbols()
     .then((symbols) => {
         for(let key in symbols) {
             let opt = new Option(`${key} - ${symbols[key]}`, key)
@@ -22,7 +22,7 @@ form.onsubmit = (e) => {
         id: String(Math.random()),
         created_at: new Date().toLocaleDateString(),
         updated_at: new Date().toLocaleDateString(),
-        user_id: JSON.parse(user)?.id
+        user_id: user_loc?.id
     }
 
     fm.forEach((value, key) => {

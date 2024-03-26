@@ -1,16 +1,17 @@
 import moment from "moment";
-import { getData, postData, patch, toaster } from "../../modules/http";
+import { getData, postData, patch } from "../../modules/http.js";
+
+let user_loc = JSON.parse(localStorage.getItem('user'))
 
 document.addEventListener("DOMContentLoaded", function () {
 
     const form = document.forms.transactionAdd;
     const select = document.querySelector('#wallet')
     const total_inp = document.querySelector('#total')
-    const user = JSON.parse(localStorage.getItem('user'))
     let wallets = []
     let selected_wallet = null
 
-    getData('/wallets?user_id=' + user.id)
+    getData('/wallets?user_id=' + user_loc.id)
         .then(res => {
             for (let item of res.data) {
                 let opt = new Option(`${item.name}`, item.id)
@@ -33,7 +34,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     total_inp.onkeyup = (e) => {
         const val = e.target.value
-
         if (+val > +selected_wallet.balance) {
             e.target.classList.add('error_input')
         } else {
@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", function () {
             created_at: new Date().toLocaleDateString(),
             updated_at: new Date().toLocaleTimeString(),
             time: new Date().toLocaleTimeString(),
-            user_id: user.id,
+            user_id: user_loc.id,
         };
 
         formData.forEach((val, key) => transaction[key] = val)
@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
-            patch(`/wallets/${transaction.wallet_id}`, { balance: selected_wallet.balance })
+            await patch(`/wallets/${transaction.wallet_id}`, { balance: selected_wallet.balance })
                 .then(res => {
                     if (res.status === 200 || res.status === 201) {
 
@@ -75,13 +75,13 @@ document.addEventListener("DOMContentLoaded", function () {
                             .then(res => {
                                 if (res.status === 200 || res.status === 201) {
                                     e.target.reset()
-                                    location.assign('/pages/transictions/')
+                                    location.assign('/pages/transactions/')
                                 }
                             })
                     }
                 })
         } else {
-            toaster('not enough money!', 'error')
+            console.log(e);
         }
     }
 })

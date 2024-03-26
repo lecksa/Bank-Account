@@ -6,36 +6,186 @@
       "name": "dilrukh",
       "surname": "abdullaeva",
       "password": "1234"
+    },
+    {
+      "id": "bd41",
+      "email": "dolabesipa@gmail.com",
+      "name": "dil",
+      "surname": "abdullaeva",
+      "password": "1234"
+    },
+    {
+      "id": "5638",
+      "email": "ruslandjavadov998@gmail.com",
+      "name": "3333",
+      "surname": "jj",
+      "password": "4444"
     }
   ],
   "wallets": [
     {
-      "id": "0.5744210883241783",
-      "created_at": "23.03.2024",
-      "updated_at": "23.03.2024",
-      "name": "dilrukh",
-      "currency": "UZS",
-      "balance": "12000",
-      "user_id": "7a6e"
+      "id": "0.7439680619731008",
+      "created_at": "24.03.2024",
+      "updated_at": "24.03.2024",
+      "user_id": "7a6e",
+      "name": "lklj",
+      "currency": "AED",
+      "balance": 44848
     },
     {
-      "id": "0.4961456352792626",
-      "created_at": "23.03.2024",
-      "updated_at": "23.03.2024",
-      "name": "dilrukh",
-      "currency": "BND",
-      "balance": "2322",
-      "user_id": "7a6e"
+      "id": "0.8646531357565921",
+      "created_at": "24.03.2024",
+      "updated_at": "24.03.2024",
+      "user_id": "7a6e",
+      "name": "d",
+      "currency": "AED",
+      "balance": 0
     },
     {
-      "id": "0.15155981562809306",
-      "created_at": "23.03.2024",
-      "updated_at": "23.03.2024",
+      "id": "0.08261227091930512",
+      "created_at": "24.03.2024",
+      "updated_at": "24.03.2024",
+      "user_id": "7a6e",
       "name": "dilrukh",
-      "currency": "BIF",
-      "balance": "40000",
-      "user_id": "7a6e"
+      "currency": "AED",
+      "balance": 57777
+    },
+    {
+      "id": "0.9416083047290664",
+      "created_at": "26.03.2024",
+      "updated_at": "26.03.2024",
+      "user_id": "7a6e",
+      "name": "dil",
+      "currency": "AED",
+      "balance": 0
+    },
+    {
+      "id": "0.039146301541643114",
+      "created_at": "26.03.2024",
+      "updated_at": "26.03.2024",
+      "user_id": "7a6e",
+      "name": "wal",
+      "currency": "USD",
+      "balance": "50500"
+    },
+    {
+      "id": "0.9022087324823747",
+      "created_at": "26.03.2024",
+      "updated_at": "26.03.2024",
+      "user_id": "5638",
+      "name": "rrrrrrrrrr",
+      "currency": "AED",
+      "balance": 7
     }
   ],
-  "transictions": []
+  "transictions": [
+    {
+      "id": "bcff",
+      "created_at": "26.03.2024",
+      "updated_at": "13:02:36",
+      "time": "13:02:36",
+      "user_id": "7a6e",
+      "wallet": {
+        "created_at": "26.03.2024",
+        "updated_at": "26.03.2024",
+        "name": "dil",
+        "currency": "AED",
+        "balance": 0
+      },
+      "total": "2000",
+      "category": "buy something",
+      "description": "do it for 3 dats",
+      "wallet_id": "0.9416083047290664"
+    },
+    {
+      "id": "3a2f",
+      "created_at": "26.03.2024",
+      "updated_at": "13:04:19",
+      "time": "13:04:19",
+      "user_id": "7a6e",
+      "wallet": {
+        "created_at": "24.03.2024",
+        "updated_at": "24.03.2024",
+        "name": "lklj",
+        "currency": "AED",
+        "balance": 44848
+      },
+      "total": "440000",
+      "category": "car",
+      "description": "vdsv",
+      "wallet_id": "0.7439680619731008"
+    },
+    {
+      "id": "3120",
+      "created_at": "26.03.2024",
+      "updated_at": "13:07:45",
+      "time": "13:07:45",
+      "user_id": "7a6e",
+      "wallet": {
+        "created_at": "23.03.2024",
+        "updated_at": "23.03.2024",
+        "name": "dilrukh",
+        "currency": "BND",
+        "balance": 322
+      },
+      "total": "2000",
+      "category": "jdsfn",
+      "description": "bsb",
+      "wallet_id": "0.4961456352792626"
+    },
+    {
+      "id": "eec8",
+      "created_at": "26.03.2024",
+      "updated_at": "13:13:04",
+      "time": "13:13:04",
+      "user_id": "7a6e",
+      "wallet": {
+        "created_at": "24.03.2024",
+        "updated_at": "24.03.2024",
+        "name": "dilrukh",
+        "currency": "AED",
+        "balance": 7777
+      },
+      "total": "20000",
+      "category": "jdsfn",
+      "description": "vdsv",
+      "wallet_id": "0.08261227091930512"
+    },
+    {
+      "id": "e4ef",
+      "created_at": "26.03.2024",
+      "updated_at": "13:13:45",
+      "time": "13:13:45",
+      "user_id": "7a6e",
+      "wallet": {
+        "created_at": "24.03.2024",
+        "updated_at": "24.03.2024",
+        "name": "d",
+        "currency": "AED",
+        "balance": 0
+      },
+      "total": "77777",
+      "category": "jdsfn",
+      "description": "bsb",
+      "wallet_id": "0.8646531357565921"
+    },
+    {
+      "id": "c6a2",
+      "created_at": "26.03.2024",
+      "updated_at": "14:42:18",
+      "time": "14:42:18",
+      "user_id": "5638",
+      "wallet": {
+        "created_at": "26.03.2024",
+        "updated_at": "26.03.2024",
+        "name": "rrrrrrrrrr",
+        "currency": "AED",
+        "balance": 7
+      },
+      "total": "70",
+      "category": "car",
+      "description": "sbf",
+      "wallet_id": "0.9022087324823747"
+    }
+  ]
 }

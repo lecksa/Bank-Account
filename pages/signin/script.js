@@ -1,5 +1,4 @@
 import { getData } from '../../modules/http.js'
-import { toaster } from '../../modules/ui.js'
 
 const form = document.forms.namedItem('signin')
 
@@ -20,11 +19,11 @@ form.onsubmit = (e) => {
                 const [res_user] = res.data
 
                 if(!res_user) {
-                    toaster('Такого пользователя не существует')    
+                    console.log(e);    
                     return
                 }
                 if(res_user.password !== password) {
-                    toaster('Не верный пароль!')    
+                    console.log(e);    
                     return
                 }
                 
